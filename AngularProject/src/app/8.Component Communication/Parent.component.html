@@ -1,0 +1,6 @@
+<b> {{title|titlecase}} </b>
+{{myname}}
+<h2> {{childTitle|json}} </h2>
+<div class="container">
+    <app-child [name]="myname" (send)="getInfo($event)"></app-child>
+</div>

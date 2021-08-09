@@ -1,0 +1,33 @@
+<h1> {{title|titlecase}} </h1>
+
+    <!-- Attribute Directives  -->
+
+<h2 [ngStyle]="MyColor"> {{name}} </h2>
+<h3 [hidden]="isHidden"> I am Hidden </h3>
+
+<h1> Structural Directives Demo </h1>
+
+<h1 *ngIf="isHide"> *ngIf is Working </h1>
+
+
+<ul *ngFor="let no of num">
+    <li>{{no}}</li>
+</ul>
+
+
+
+<h3> Table Form </h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+    </tr>
+    <tr *ngFor="let item of student">
+        <td>{{item.name}}</td>
+        <td>{{item.lastname}}</td>
+        <td>{{item.City}}</td>
+    </tr>
+</table>
+
+
