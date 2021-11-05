@@ -1,0 +1,43 @@
+<h1> {{title}} </h1>
+<div class="container">
+<form>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Name</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="name" class="form-control" [(ngModel)]="name">
+        </div>
+        <div class="col-md-2">
+            {{name}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label>City</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="city" class="form-control" [(ngModel)]="city">
+        </div>
+        <div class="col-md-2">
+            {{city}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Phone</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="phone" class="form-control" [(ngModel)]="phone">
+        </div>
+        <div class="col-md-2">
+            {{phone}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        <button class="btn btn-primary" (click)="SaveData()">Save</button>
+        </div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,5 @@
+<h2> {{title|titlecase}} </h2>
+{{myname}}
+<h2>{{childtitle|json}}</h2>
+<hr>
+<child-comp [name1]="myname" (send)="getInfo($event)"></child-comp>

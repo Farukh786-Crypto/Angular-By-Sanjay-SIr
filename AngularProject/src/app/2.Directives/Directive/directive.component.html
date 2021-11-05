@@ -1,14 +1,16 @@
 <h1> {{title|titlecase}} </h1>
 
-    <!-- Attribute Directives  -->
+    <h1> Attribute Directives  </h1> 
 
 <h2 [ngStyle]="MyColor"> {{name}} </h2>
-<h3 [hidden]="isHidden"> I am Hidden </h3>
+<h3 [hidden]="isHidden"> I am Hidden in Browser not DOM </h3>
+<h3 [hidden]="isHidden1"> I am Not Hidden  </h3>
 
 <h1> Structural Directives Demo </h1>
 
 <h1 *ngIf="isHide"> *ngIf is Working </h1>
 
+<h1 *ngIf="isHide1"> *ngIf is Working but not shown in DOM and Browser !!! </h1>
 
 <ul *ngFor="let no of num">
     <li>{{no}}</li>

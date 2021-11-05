@@ -1,0 +1,24 @@
+** How to install Bootstrap in Angular
+
+step 1: Now we need to run below command to install bootstrap for application good looks:
+npm install bootstrap --save
+
+
+step 2: Now we need to add below code into our angular.json file for get styles and scripts:
+
+...
+"styles": [
+              ...
+           
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            ],
+"scripts": [
+          ...
+            
+            "node_modules/bootstrap/dist/js/bootstrap.js",
+            ]
+...
+
+step 3: Now we need to add below code into our src/app/app.component.ts file to make functions and events:
+
+

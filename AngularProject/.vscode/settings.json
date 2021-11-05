@@ -1,0 +1,6 @@
+{
+    "json.schemas": [
+    
+    ],
+    "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
+}

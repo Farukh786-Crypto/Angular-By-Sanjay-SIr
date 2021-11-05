@@ -1,0 +1,28 @@
+<h1> {{title}} </h1>
+
+<h2> Attribute Directives change appearence of single HTML Element </h2>
+
+<h3 [ngStyle]="mycolor" >{{name}}</h3>
+
+<h3 [hidden]="isHidden"> {{name}} </h3>
+
+<hr>
+
+<h2> Structural Directives </h2>
+
+<h3 *ngIf="isHide"> {{name}} </h3>
+
+<ul *ngFor="let no of num">
+    <li>{{no}}</li>
+</ul>
+
+<table border="1 px solid">
+    <tr>
+        <th>Name</th>
+        <th>LastName</th>
+    </tr>
+    <tr *ngFor="let stud of student">
+        <td>{{stud.name}}</td>
+        <td>{{stud.lastname}}</td>
+    </tr>
+</table>

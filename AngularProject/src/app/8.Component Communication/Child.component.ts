@@ -15,7 +15,7 @@ export class ChildComponent{
 
     student:any={name:'Farukh',city:'pune'};
     public sendData(){
-        this.send.emit(this.student);
+        this.send.emit(JSON.stringify(this.student));
     }
 
 }

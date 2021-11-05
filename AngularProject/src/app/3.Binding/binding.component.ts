@@ -11,7 +11,7 @@ export class BindingComponent{
 
     name:string='Farukh Shaikh';
     city:string='Pune';
-    Phone:string='9730285635'
+    Phone:string='9730285635';
 
 
     public Show():void

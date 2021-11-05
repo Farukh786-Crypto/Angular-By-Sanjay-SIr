@@ -10,9 +10,11 @@ export class DirectivesComponent{
 
     name:string='I am Farukh';
     MyColor:any ={color:'red'};
-    isHidden:boolean=false;
+    isHidden:boolean=true; // dont show in browser but show in DOM
+    isHidden1:boolean=false;
 
-    isHide:boolean=true;
+    isHide:boolean=true; 
+    isHide1:boolean=false; // don't show in browser and DOM
     num:any=[1,2,3,4,5];
     student:any=[
         {name:'Farukh' , lastname:'Shaikh' , City:'Pune'} ,

@@ -1,0 +1,45 @@
+<h2> {{title|titlecase}} </h2>
+
+<h3> Student Information </h3>
+<button (click)="getStudent()">Show</button>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+    <tr *ngFor="let stud1 of studentInfo">
+        <td>{{stud1.name}}</td>
+        <td>{{stud1.city}}</td>
+    </tr>
+</table>
+
+<hr>
+
+{{userInfo?.data|json}}
+<button class="btn btn-primary" (click)="getAllUser()">Click</button>
+<table>
+    <tr>
+        <th>ID</th>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Email </th>
+        <th> Avtar </th>
+    </tr>
+    <tr *ngFor="let us1 of userInfo?.data">
+        <td>{{us1.id}}</td>
+        <td>{{us1.first_name}}</td>
+        <td>{{us1.last_name}}</td>
+        <td>{{us1.email}}</td>
+        <td><img src="{{us1.avatar}}" alt="Not Shown"></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
